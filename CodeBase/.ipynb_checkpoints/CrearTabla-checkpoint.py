@@ -29,3 +29,11 @@ def printHTMLTable(encabezados, contenido):
         display(HTML(html))
     else:
         print("Verificar longitud de encabezados y contenido")
+
+def datosStrPorcentaje(fr, frAc):
+    frStr, frAcStr = [], []
+    for i in range(len(fr)):
+        frStr.append(str(fr[i]) + "%")
+    for i in range(len(frAc)):
+        frAcStr.append(str(frAc[i]) + "%")
+    return frStr, frAcStr
