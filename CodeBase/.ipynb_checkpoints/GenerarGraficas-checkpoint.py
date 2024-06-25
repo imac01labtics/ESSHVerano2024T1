@@ -3,10 +3,10 @@ print("Setup terminado")
 colors = ["#20BEFF","#1F77B4","#72C3DC","#D6DBDF","#5D6D7E","#F8F9F9","#2c4359"]
 
 # HISTOGRAMA
-def createHistogram(marcasClase, fa, titulo="Histograma", colores=colors):
+def createHistogram(marcasClase, fr, titulo="Histograma", colores=colors):
     plt.figure(figsize = (8, 4))
     valores_ref_eje = list(range(1, len(marcasClase) + 1))
-    plt.bar(valores_ref_eje, fa,
+    plt.bar(valores_ref_eje, fr,
             width = 1, edgecolor= "k", 
             color = colores) 
     plt.xticks(valores_ref_eje, marcasClase, fontsize = 10)
