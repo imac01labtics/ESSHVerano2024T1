@@ -11,7 +11,7 @@ def createHistogram(marcasClase, fr, titulo="Histograma", colores=colors):
             color = colores) 
     plt.xticks(valores_ref_eje, marcasClase, fontsize = 10)
     plt.xlabel("Marcas de clase", fontsize = 15)
-    plt.ylabel("Frecuencia Absoluta", fontsize = 15)
+    plt.ylabel("Frecuencia relativa", fontsize = 15)
     plt.title(titulo, fontsize = 20)
     plt.grid()
     plt.show()
