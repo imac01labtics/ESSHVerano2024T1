@@ -30,10 +30,11 @@ def formatData(dataArray):
         if isinstance(element, str):
             element = element.strip()
             element = element.lower()
-            #element = element.replace('á','a')
-            #element = element.lower()
-            #element = element.lower()
-            #element = element.lower()
+            element = element.replace('á','a')
+            element = element.replace('é','e')
+            element = element.replace('í','i')
+            element = element.replace('ó','o')
+            element = element.replace('ú','u')
             dataArraySorted.append(element)
         else:
             element = round(element, 3)
