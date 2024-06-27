@@ -34,7 +34,7 @@ def clases_groped(datos, noClases=0):
     
     if noClases == 0:
         numClases = 1 + 3.3 * math.log10(len(datos))
-        print(numClases)
+        #print(numClases)
     else: 
         numClases = noClases
     numClases = round(numClases)

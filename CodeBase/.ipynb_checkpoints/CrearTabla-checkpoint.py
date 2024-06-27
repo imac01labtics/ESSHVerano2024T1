@@ -10,7 +10,14 @@ def printTable(encabezados, contenido):
         print("La longitud de encabezados y contenido no coincide")
 
 # Crear tabla HTML
-from IPython.display import HTML, display
+from IPython.display import HTML, display, Markdown
+
+# Mostrar texto en formato HTML
+def printHTML(text, font_size='auto'):
+    if font_size != 'auto':
+        font_size = str(font_size) + "px"
+    display(HTML(f'<span style="font-size: {font_size};">{text}</span>'))
+    
 def printHTMLTable(encabezados, contenido):
     if len(encabezados) == len(contenido):
         html = "<center><table>"
