@@ -78,6 +78,9 @@ def generateQualitativeData(lstDatos):
             frecAbs.append(1)
         else:
             frecAbs[clase.index(element)] += 1
+
+    # Orden mayor a menor Fa
+    clase, frecAbs = mayorMenorFrec(clase, frecAbs)
     
     frecAbsAc, frecRel, frecRelAc = [], [], []
     frecAbsT = sum(frecAbs)
